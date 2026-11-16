@@ -10,7 +10,7 @@ namespace api.Controllers
         [HttpGet("username")]
         public IActionResult UserName(string username)
         {
-            return Ok (new {Message = $"Hello {username}!"});
+            return Ok (new {Message = $"Hello, {username}!"});
         }
     }
 }
