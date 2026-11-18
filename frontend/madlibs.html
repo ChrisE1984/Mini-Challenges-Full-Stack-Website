@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Mad Libs</title>
+</head>
+<body class="min-h-[786px] bg-linear-to-b from-cyan-100 to-cyan-600">
+
+    <header class="flex items-center justify-between">
+        <h1 class="text-3xl font-bold text-slate-800">Mini Challenges</h1>
+        <a href="index.html" class="font-bold text-slate-800 hover:text-slate-600">Home</a>
+    </header>
+ 
+<form id="mad-form">
+    <input id="adjective" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter an adjective... " />
+    <input id="noun" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter a noun.." />
+    <input id= "plural-noun" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter a plural noun..." />
+    <input id="verb" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter a verb..." />
+    <input id="color" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter a color..." />
+    <input id="adjective-two" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter an adjective..." />
+    <input id="number" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter a number..." />
+    <input id="exclamation" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter a Exclamation!..." />
+    <input id="noun-two" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter an noun..." />
+    <input id="silly-words" type="text" class="bg-linear-to-b from-cyan-100 to bg-cyan-200 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4" required placeholder="Enter an silly word..." />
+    <button id="generate" type="submit" class= "bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700  text-slate-800 font-bold py-2 px-4 rounded border border-slate-800">Generate Mad Lib</button>
+
+<p id="mad-text" class="text-lg font-medium mt-4">Story appears here.</p>
+
+</form>
+
+<script src = "js/app.js"></script>
+</body>
+</html>

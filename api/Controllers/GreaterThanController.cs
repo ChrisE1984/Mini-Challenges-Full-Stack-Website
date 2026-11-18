@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using api.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.Controllers
@@ -7,6 +8,12 @@ namespace api.Controllers
     [Route("api/[controller]")]
     public class GreaterThanController : ControllerBase
     {
+        private readonly IGreaterThanServices _greaterThanServices;
+
+        public GreaterThanController(IGreaterThanServices greaterThanServices)
+        {
+            _greaterThanServices = greaterThanServices;
+        }
 
         [HttpGet("compare/{numOne:int}/{numTwo:int}")]
         public IActionResult Compare(int numOne, int numTwo)
@@ -14,15 +21,15 @@ namespace api.Controllers
             string result;
             if (numOne > numTwo)
             {
-                result = $"{numOne} is greater than {numTwo}.\n {numTwo} is less than {numOne}. ";
+                result = $"Your first number is {numOne} and your second number is {numTwo}.\n {numOne} is greater than {numTwo}. ";
             }
             else if (numTwo > numOne)
             {
-                result = $"{numTwo} is greater than {numOne}.\n {numOne} is less than {numTwo}. ";
+                result = $"Your first number is {numOne} and your second number is {numTwo}.\n {numOne} is less than {numTwo}. ";
             }
             else
             {
-                result = "The numbers are equal.";
+                result = $"Your first number is {numOne} and your second number is {numTwo}.\n The numbers are equal.";
             }
 
             return Ok(new { numOne, numTwo, Result = result });

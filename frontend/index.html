@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Mini Challenges</title>
 </head>
-<body class = "h-100 bg-linear-to-b from-cyan-100 to bg-cyan-600">
+<body class = "min-h-[786px] bg-linear-to-b from-cyan-100 to bg-cyan-600">
 
-    <h1 class="text-3xl font-bold text-slate-800">Mini Challenges</h1>
+    <header class="flex items-center justify-between">
+        <h1 class="text-3xl font-bold text-slate-800">Mini Challenges</h1>
+        <a href="index.html" class="font-bold text-slate-800 hover:text-slate-600">Home</a>
+    </header>
  
-    <button id="sayHello" class= "bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700  text-slate-800 font-bold py-2 px-4 rounded border border-slate-800">Say Hello</button>
-    <button id="twoNumbers" class="bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700  text-slate-800 font-bold py-2 px-4 rounded border border-slate-800">Add 2 Numbers</button>
-    <button id="greaterLess" class="bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700  text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4">Greater Than or Less Than</button>
-
-
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <button id="sayHello" class="w-full bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4">Say Hello</button>
+        <button id="twoNumbers" class="w-full bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4">Add 2 Numbers</button>
+        <button id="greaterLess" class="w-full bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4">Greater Than or Less Than</button>
+        <button id="magic" class="w-full bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4">Ask The Magic 8-Ball</button>
+        <button id="madLibs" class="w-full bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4">Mad Libs</button>
+        <button id="restaurant" class="w-full bg-linear-to-b from-cyan-100 to bg-cyan-600 hover:bg-blue-700 text-slate-800 font-bold py-2 px-4 rounded border border-slate-800 mt-4">Restaurant Picker</button>
+    </div>
 
 <script src = "js/app.js"></script>
 </body>

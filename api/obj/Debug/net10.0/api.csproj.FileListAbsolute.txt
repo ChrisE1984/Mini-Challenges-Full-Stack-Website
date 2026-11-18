@@ -31,3 +31,4 @@ C:\Users\cestr\Desktop\Homework\Level 2\Mini Challenges Full-Stack Website\api\o
 C:\Users\cestr\Desktop\Homework\Level 2\Mini Challenges Full-Stack Website\api\obj\Debug\net10.0\api.pdb
 C:\Users\cestr\Desktop\Homework\Level 2\Mini Challenges Full-Stack Website\api\obj\Debug\net10.0\api.genruntimeconfig.cache
 C:\Users\cestr\Desktop\Homework\Level 2\Mini Challenges Full-Stack Website\api\obj\Debug\net10.0\ref\api.dll
+C:\Users\cestr\Desktop\Homework\Level 2\Mini Challenges Full-Stack Website\api\obj\Debug\net10.0\api.sourcelink.json
