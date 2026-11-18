@@ -21,11 +21,11 @@ namespace api.Controllers
             string result;
             if (numOne > numTwo)
             {
-                result = $"Your first number is {numOne} and your second number is {numTwo}.\n {numOne} is greater than {numTwo}. ";
+                result = $"Your first number is {numOne} and your second number is {numTwo}.\n {numOne} is greater than {numTwo}. {numTwo} is less than {numOne}. ";
             }
             else if (numTwo > numOne)
             {
-                result = $"Your first number is {numOne} and your second number is {numTwo}.\n {numOne} is less than {numTwo}. ";
+                result = $"Your first number is {numOne} and your second number is {numTwo}.\n {numOne} is less than {numTwo}. {numTwo} is greater than {numOne}. ";
             }
             else
             {
